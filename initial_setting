@@ -1,8 +1,14 @@
 #!/bin/bash
 
-useradd -m -s /bin/bash py37
-echo "py37:passwd" | chpasswd
-adduser py37 sudo
+sudo apt-get install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update -y
+sudo apt-get install python3.7
+
+python3.7 -m venv .venv
 
 chmod u+x ./py37env_runbash
 chown -R py37:py37 /home/py37
+
+rm initial_setter
+rm initial_setting
