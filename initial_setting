@@ -12,3 +12,4 @@ chown -R py37:py37 /home/py37
 
 rm initial_setter
 rm initial_setting
+rm umm.md
