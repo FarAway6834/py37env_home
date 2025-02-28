@@ -1,0 +1,8 @@
+#!/bin/bash
+
+useradd -m -s /bin/bash py37
+echo "py37:passwd" | chpasswd
+adduser py37 sudo
+
+chmod u+x ./py37env_runbash
+chown -R py37:py37 /home/py37

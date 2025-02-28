@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. ./activate
+echo "default passwd is passwd, username is py37 mean python3.7 env usr"
+exec bash -i
